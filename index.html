@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verified Dating Platform - Meet Real People</title>
+    <meta name="description" content="Join our trusted dating community with verified profiles and positive reviews. Connect with real people looking for meaningful relationships.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#ff3366',
+                        'secondary': '#ff6699',
+                        'accent': '#33ccff',
+                        'trust': '#4ade80',
+                        'dark': '#1a1a2e',
+                        'light': '#f8f9fa'
+                    },
+                    fontFamily: {
+                        'display': ['"Poppins"', 'sans-serif'],
+                        'body': ['"Open Sans"', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s infinite',
+                        'float': 'float 3s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-light via-white to-accent/10 font-body">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-heart text-white text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-display font-bold text-dark">Verified<span class="text-primary">Connections</span></h1>
+                </div>
+                <ul id="nav-list" class="flex gap-6"></ul>
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center text-sm bg-trust/20 px-3 py-1 rounded-full">
+                        <i class="fas fa-check-circle text-trust mr-1"></i>
+                        <span class="text-dark font-medium">Trusted & Verified</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="container mx-auto px-4 py-12 md:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-dark leading-tight">
+                            Find Your Perfect Match in Our <span class="text-primary">Verified</span> Community
+                        </h2>
+                        <p class="text-lg text-gray-700 mt-4">
+                            Join thousands of real people who have found meaningful connections through our trusted platform. Every profile is verified for authenticity.
+                        </p>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div id="trust-indicators" class="grid grid-cols-2 md:grid-cols-3 gap-4"></div>
+
+                    <!-- Main CTA Button -->
+                    <div class="mt-10">
+                        <a href="https://singleswantdates.com/tds/ae?tdsId=s3166sag_r&tds_campaign=s3166sag&utm_sub=opnfnl&s1=ps&utm_source=int&affid=2d65b77d&subid={subid}&clickid={clickid}&subid2={subid2}" 
+                           class="inline-block bg-primary hover:bg-secondary text-white font-display font-bold text-xl px-10 py-5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-pulse-slow">
+                            <i class="fas fa-user-plus mr-3"></i>FREE JOIN NOW
+                        </a>
+                        <p class="text-gray-600 mt-3 text-sm">
+                            <i class="fas fa-shield-alt text-trust mr-1"></i>100% Free Registration • No Hidden Fees
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="relative">
+                    <div class="bg-gradient-to-r from-accent to-primary/30 rounded-2xl p-8 shadow-2xl">
+                        <img src="https://picsum.photos/600/500?random=1" alt="Happy couples meeting and connecting" class="w-full rounded-xl shadow-lg" loading="lazy">
+                        <div class="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-xl border border-gray-200">
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-users text-white text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-display font-bold text-dark text-xl">Active Members</h3>
+                                    <p class="text-gray-700"><span class="text-primary font-bold">50,000+</span> Verified Profiles</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="bg-white/80 py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-dark">
+                        Real Success Stories
+                    </h2>
+                    <p class="text-gray-600 mt-2">Verified reviews from our happy members</p>
+                </div>
+                <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 bg-gradient-to-r from-light to-accent/20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-dark">
+                        Why Our Platform Stands Out
+                    </h2>
+                    <p class="text-gray-600 mt-2">Features designed for genuine connections</p>
+                </div>
+                <div id="features-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+            </div>
+        </section>
+
+        <!-- Secondary CTA Section -->
+        <section class="py-20 bg-dark text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">
+                        Ready to Meet Real People?
+                    </h2>
+                    <p class="text-gray-300 mb-8 text-lg">
+                        Don't wait for love to find you. Take the first step today and connect with verified individuals looking for meaningful relationships.
+                    </p>
+                    <div class="space-y-6">
+                        <a href="http://rs-to-ab.com/tds/ae?tdsId=s7574mir_r&tds_campaign=s7574mir&utm_sub=opnfnl&s1=ps&utm_source=int&affid=2d65b77d&subid={subid}&clickid={clickid}&subid2={subid2}" 
+                           class="inline-block bg-accent hover:bg-primary text-white font-display font-bold text-xl px-12 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-float">
+                            <i class="fas fa-handshake mr-3"></i>FREE MEET REAL PEOPLE
+                        </a>
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-clock mr-1"></i>Instant Access • Verified Profiles Only
+                        </p>
+                    </div>
+                    <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="text-center p-4 bg-white/10 rounded-lg">
+                            <i class="fas fa-user-check text-trust text-2xl mb-2"></i>
+                            <p class="font-medium">Profile Verification</p>
+                        </div>
+                        <div class="text-center p-4 bg-white/10 rounded-lg">
+                            <i class="fas fa-comments text-accent text-2xl mb-2"></i>
+                            <p class="font-medium">Safe Messaging</p>
+                        </div>
+                        <div class="text-center p-4 bg-white/10 rounded-lg">
+                            <i class="fas fa-heart text-primary text-2xl mb-2"></i>
+                            <p class="font-medium">Real Connections</p>
+                        </div>
+                        <div class="text-center p-4 bg-white/10 rounded-lg">
+                            <i class="fas fa-star text-secondary text-2xl mb-2"></i>
+                            <p class="font-medium">5-Star Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-dark">
+                        Frequently Asked Questions
+                    </h2>
+                    <p class="text-gray-600 mt-2">Common questions about our verified dating platform</p>
+                </div>
+                <div id="faq-list" class="max-w-3xl mx-auto space-y-6"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-heart text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold">Verified<span class="text-accent">Connections</span></h3>
+                    </div>
+                    <p class="text-gray-400">
+                        A trusted platform for genuine connections between verified individuals. Our community is built on authenticity and safety.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-4">Quick Links</h4>
+                    <ul id="footer-links" class="space-y-3"></ul>
+                </div>
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-4">Contact & Support</h4>
+                    <ul id="contact-list" class="space-y-3"></ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
+                <p>&copy; 2023 VerifiedConnections. All rights reserved. <span class="text-trust"><i class="fas fa-shield-alt mr-1"></i>Trusted & Verified Platform</span></p>
+                <p class="mt-2 text-sm">This site uses secure encryption and verification processes to ensure member safety.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Data and Rendering -->
+    <script>
+        // Data Layer
+        const navigationItems = [
+            { "label": "Home", "href": "#home", "icon": "fas fa-home" },
+            { "label": "How It Works", "href": "#how", "icon": "fas fa-play-circle" },
+            { "label": "Reviews", "href": "#reviews", "icon": "fas fa-star" },
+            { "label": "Safety", "href": "#safety", "icon": "fas fa-shield-alt" },
+            { "label": "FAQ", "href": "#faq", "icon": "fas fa-question-circle" }
+        ];
+
+        const trustIndicators = [
+            { "title": "Verified Profiles", "desc": "Every member is identity verified", "icon": "fas fa-user-check", "color": "text-trust" },
+            { "title": "Safe Environment", "desc": "Secure messaging & reporting", "icon": "fas fa-shield-alt", "color": "text-accent" },
+            { "title": "Real Reviews", "desc": "Authentic member testimonials", "icon": "fas fa-comment-check", "color": "text-primary" },
+            { "title": "24/7 Support", "desc": "Dedicated customer assistance", "icon": "fas fa-headset", "color": "text-secondary" }
+        ];
+
+        const reviews = [
+            { "name": "Sarah & Michael", "date": "Met 3 months ago", "text": "We connected through VerifiedConnections and it felt genuine from day one. The verification process made us feel safe.", "rating": 5, "img": "https://picsum.photos/100/100?random=2" },
+            { "name": "Jessica L.", "date": "Verified Member", "text": "After trying other platforms, this was different. Real people, real conversations. Found my partner within weeks!", "rating": 5, "img": "https://picsum.photos/100/100?random=3" },
+            { "name": "David R.", "date": "Joined 2 months ago", "text": "The profile verification is a game-changer. No fake profiles, just authentic individuals looking for connections.", "rating": 5, "img": "https://picsum.photos/100/100?random=4" },
+            { "name": "Amanda K.", "date": "Active Member", "text": "Love the community feel. Everyone is verified which creates a trustworthy environment for dating.", "rating": 5, "img": "https://picsum.photos/100/100?random=5" },
+            { "name": "Chris & Elena", "date": "Engaged 6 months ago", "text": "We owe our relationship to this platform. The verification gave us confidence to meet in person.", "rating": 5, "img": "https://picsum.photos/100/100?random=6" },
+            { "name": "Robert T.", "date": "Verified since 2022", "text": "Best dating experience I've had. The focus on verified profiles eliminates all the usual dating app frustrations.", "rating": 5, "img": "https://picsum.photos/100/100?random=7" }
+        ];
+
+        const features = [
+            { "title": "Profile Verification", "desc": "Every member undergoes identity verification", "icon": "fas fa-id-card", "color": "bg-trust/20" },
+            { "title": "Smart Matching", "desc": "AI-powered compatibility matching", "icon": "fas fa-brain", "color": "bg-accent/20" },
+            { "title": "Safe Messaging", "desc": "Encrypted chat with safety features", "icon": "fas fa-comment-dots", "color": "bg-primary/20" },
+            { "title": "Community Events", "desc": "Virtual and local meetup opportunities", "icon": "fas fa-calendar-alt", "color": "bg-secondary/20" }
+        ];
+
+        const faqItems = [
+            { "question": "Is joining really free?", "answer": "Yes! Registration is 100% free with no hidden fees. You can create your verified profile without any cost." },
+            { "question": "How does profile verification work?", "answer": "We use multiple methods to verify identities including document checks and video verification to ensure authenticity." },
+            { "question": "Is my data safe?", "answer": "We use industry-standard encryption and never share your personal information with third parties without consent." },
+            { "question": "Can I meet people locally?", "answer": "Yes! Our platform shows you verified members in your area and organizes local community events." },
+            { "question": "What makes this different from other dating sites?", "answer": "Our focus on verified profiles creates a community of real people, eliminating fake accounts and scams." }
+        ];
+
+        const footerLinks = [
+            { "label": "About Us", "href": "#about", "icon": "fas fa-info-circle" },
+            { "label": "Safety Guidelines", "href": "#safety", "icon": "fas fa-shield-alt" },
+            { "label": "Success Stories", "href": "#success", "icon": "fas fa-heart" },
+            { "label": "Privacy Policy", "href": "#privacy", "icon": "fas fa-lock" },
+            { "label": "Terms of Service", "href": "#terms", "icon": "fas fa-file-contract" }
+        ];
+
+        const contactItems = [
+            { "label": "Email Support", "value": "support@verifiedconnections.com", "icon": "fas fa-envelope" },
+            { "label": "Safety Hotline", "value": "1-800-555-SAFE", "icon": "fas fa-phone-alt" },
+            { "label": "Live Chat", "value": "Available 24/7", "icon": "fas fa-comments" },
+            { "label": "Community Forum", "value": "Join Discussions", "icon": "fas fa-users" }
+        ];
+
+        // Reusable Render Functions
+        function renderNavItems(items) {
+            return items.map(item => 
+                `<li><a href="${item.href}" class="flex items-center text-gray-700 hover:text-primary font-medium transition-colors">
+                    <i class="${item.icon} mr-2"></i>${item.label}
+                </a></li>`
+            ).join("");
+        }
+
+        function renderTrustIndicators(items) {
+            return items.map(item => 
+                `<div class="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+                    <div class="flex items-center mb-2">
+                        <i class="${item.icon} ${item.color} text-2xl mr-3"></i>
+                        <h3 class="font-display font-bold text-dark">${item.title}</h3>
+                    </div>
+                    <p class="text-gray-600">${item.desc}</p>
+                </div>`
+            ).join("");
+        }
+
+        function renderReviews(items) {
+            return items.map(item => 
+                `<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
+                    <div class="flex items-start mb-4">
+                        <img src="${item.img}" alt="${item.name}" class="w-12 h-12 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <h3 class="font-display font-bold text-dark">${item.name}</h3>
+                            <p class="text-gray-500 text-sm">${item.date}</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        ${Array(item.rating).fill().map(() => `<i class="fas fa-star text-primary mr-1"></i>`).join("")}
+                    </div>
+                    <p class="text-gray-700">"${item.text}"</p>
+                </div>`
+            ).join("");
+        }
+
+        function renderFeatures(items) {
+            return items.map(item => 
+                `<div class="bg-white rounded-xl p-6 shadow-md ${item.color}">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-4 shadow-sm">
+                            <i class="${item.icon} text-2xl text-dark"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-dark text-lg">${item.title}</h3>
+                    </div>
+                    <p class="text-gray-600">${item.desc}</p>
+                </div>`
+            ).join("");
+        }
+
+        function renderFAQ(items) {
+            return items.map(item => 
+                `<div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 class="font-display font-bold text-dark text-lg mb-3">${item.question}</h3>
+                    <p class="text-gray-700">${item.answer}</p>
+                </div>`
+            ).join("");
+        }
+
+        function renderFooterLinks(items) {
+            return items.map(item => 
+                `<li><a href="${item.href}" class="flex items-center text-gray-400 hover:text-accent transition-colors">
+                    <i class="${item.icon} mr-2"></i>${item.label}
+                </a></li>`
+            ).join("");
+        }
+
+        function renderContactItems(items) {
+            return items.map(item => 
+                `<li class="flex items-center">
+                    <i class="${item.icon} mr-3 text-accent"></i>
+                    <div>
+                        <span class="text-gray-400 font-medium">${item.label}:</span>
+                        <span class="text-white"> ${item.value}</span>
+                    </div>
+                </li>`
+            ).join("");
+        }
+
+        // DOM Injection
+        document.getElementById("nav-list").innerHTML = renderNavItems(navigationItems);
+        document.getElementById("trust-indicators").innerHTML = renderTrustIndicators(trustIndicators);
+        document.getElementById("reviews-grid").innerHTML = renderReviews(reviews);
+        document.getElementById("features-grid").innerHTML = renderFeatures(features);
+        document.getElementById("faq-list").innerHTML = renderFAQ(faqItems);
+        document.getElementById("footer-links").innerHTML = renderFooterLinks(footerLinks);
+        document.getElementById("contact-list").innerHTML = renderContactItems(contactItems);
+
+        // Event Delegation for Navigation
+        document.addEventListener("click", function(event) {
+            const link = event.target.closest("a[href^='#']");
+            if (!link) return;
+            event.preventDefault();
+            const targetId = link.getAttribute("href");
+            if (targetId === "#home") {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            } else {
+                const target = document.querySelector(targetId);
+                if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        });
+
+        // Button Animation Enhancement
+        const buttons = document.querySelectorAll("a[href*='tds']");
+        buttons.forEach(button => {
+            button.addEventListener("mouseenter", function() {
+                this.style.transform = "scale(1.05)";
+            });
+            button.addEventListener("mouseleave", function() {
+                this.style.transform = "";
+            });
+        });
+
+        // Trust Badge Animation
+        const trustBadge = document.querySelector(".bg-trust/20");
+        if (trustBadge) {
+            trustBadge.addEventListener("click", function() {
+                this.classList.toggle("animate-pulse");
+            });
+        }
+    </script>
+</body>
+</html>
